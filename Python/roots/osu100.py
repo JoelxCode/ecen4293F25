@@ -1,3 +1,4 @@
+
 from brentsimp import brentsimp
 from scipy.optimize import brentq
 import matplotlib.pyplot as plt

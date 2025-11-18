@@ -1,3 +1,4 @@
+
 from numpy.polynomial import Polynomial
 
 # Define polynomials
