@@ -7,12 +7,13 @@ import numpy as np
 from scipy import stats
 from scipy.optimize import least_squares
 import matplotlib.pyplot as plt
-import re
+
 
 # --- Read CSV ---
 def read_csv_data(file_path):
     """
     TODO:
+    
     - Open the CSV file with `with open(file_path, mode='r', newline='')`
     - Create a csv.reader object
     - Skip the header row
@@ -20,7 +21,19 @@ def read_csv_data(file_path):
         * Extract Year (int), Team (str), League (str), Player (str), Salary (float)
         * Append as a dictionary to a list
     - Return the list of dictionaries
+        """
+    with open(Python\Dictionary\Batting.csv, mode='r', newline='', encoding='utf-8') as f:
     """
+    mode='r' -  this means that the file is being opened in read mode. 
+    newline='' -  this ensures that newlines are handled correctly across different operating systems.
+    encoding='utf-8' -  this specifies the character encoding to be used when reading the file.
+    """
+    reader = csv.reader(f)
+    next(reader, None)  # Skip header row
+    
+
+
+
 
     #Rows is being created and initialized to an empty list. 
     rows: List[Dict[str, object]]= []
